@@ -1,4 +1,2 @@
-Java
-=============
-
-My TDD Java code kattas
+Test driven development Code Kattas with Java
+===============
