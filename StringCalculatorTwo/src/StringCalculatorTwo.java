@@ -34,12 +34,12 @@ public class StringCalculatorTwo {
             return Arrays.asList(); // empty list, also possible: new ArrayList<Integer>();
         }
 
-        String tokens[] = tokenize(numbers);
+        List<String> tokens = tokenize(numbers);
 
         return convert(tokens, new NumberConverter());
     }
 
-    private String[] tokenize(String numbers) {
+    private List<String> tokenize(String numbers) {
         String delimiter = ",";
         if(usesCustomDelimiter(numbers)) {
             Matcher m = Pattern.compile("\\/\\/(.)\\n(.*)").matcher(numbers);
@@ -48,7 +48,7 @@ public class StringCalculatorTwo {
                 numbers = m.group(2);
             }
         }
-        return numbers.split("(" + delimiter + "|\n" + ")");
+        return Arrays.asList(numbers.split("(" + delimiter + "|\n" + ")"));
     }
 
     public int add(String numbers) {
