@@ -1,2 +1,2 @@
-Test driven development Code Kattas with Java
+Test driven development Code Katas with Java
 ===============

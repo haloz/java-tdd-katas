@@ -1,4 +1,4 @@
-Java TDD Katta
+Java TDD Kata
 =============
 
 String Calculator
@@ -41,4 +41,4 @@ Second Implementation
 * (/) fewer regexp (we're not in Perl ...)
 * (/) no plain arrays, use managed data types like List<>
 * (/) better split into submethods
-* mock/stubs
+* (x) mock/stubs => will do in other kata
