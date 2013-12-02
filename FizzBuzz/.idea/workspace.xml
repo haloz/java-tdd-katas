@@ -7,8 +7,8 @@
     <file path="/fragment.java" changelist="37c2d951-091c-404a-b5f9-6ef650580970" time="1386002234455" ignored="false" />
     <file path="/Dummy.txt" changelist="37c2d951-091c-404a-b5f9-6ef650580970" time="1386002215975" ignored="false" />
     <file path="/README.md" changelist="37c2d951-091c-404a-b5f9-6ef650580970" time="1386002299132" ignored="false" />
-    <file path="/FizzBuzzTest.groovy" changelist="37c2d951-091c-404a-b5f9-6ef650580970" time="1386003155214" ignored="false" />
-    <file path="/FizzBuzz.java" changelist="37c2d951-091c-404a-b5f9-6ef650580970" time="1386003227093" ignored="false" />
+    <file path="/FizzBuzzTest.groovy" changelist="37c2d951-091c-404a-b5f9-6ef650580970" time="1386004364557" ignored="false" />
+    <file path="/FizzBuzz.java" changelist="37c2d951-091c-404a-b5f9-6ef650580970" time="1386004531671" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,16 +72,16 @@
       <file leaf-file-name="FizzBuzz.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FizzBuzz.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="19" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
+            <state line="14" column="42" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FizzBuzzTest.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="FizzBuzzTest.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FizzBuzzTest.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="40" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
+            <state line="49" column="84" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.79049295">
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -89,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="53" selection-start="1204" selection-end="1204" vertical-scroll-proportion="0.47887325">
+            <state line="16" column="53" selection-start="1204" selection-end="1204" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,8 +109,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/FizzBuzz.java" />
         <option value="$PROJECT_DIR$/src/FizzBuzzTest.groovy" />
+        <option value="$PROJECT_DIR$/src/FizzBuzz.java" />
       </list>
     </option>
   </component>
@@ -424,26 +424,26 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="53" selection-start="1204" selection-end="1204" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FizzBuzz.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="19" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
+        <state line="14" column="42" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FizzBuzzTest.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="40" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
+        <state line="49" column="84" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.79049295">
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="53" selection-start="1204" selection-end="1204" vertical-scroll-proportion="0.47887325">
-          <folding />
         </state>
       </provider>
     </entry>

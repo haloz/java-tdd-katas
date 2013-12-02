@@ -2,6 +2,8 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Test
 import static org.junit.Assert.assertEquals
+import static org.junit.Assert.assertThat
+import static org.junit.Assert.assertTrue
 
 /**
  * Created with IntelliJ IDEA.
@@ -31,11 +33,20 @@ class FizzBuzzTest {
     }
 
     @Test
-    void shouldPrintOutNumbersZeroToHundred() {
-        String numbersZeroToHundred = "";
-        for(int i=1; i<=100; i++)
-            numbersZeroToHundred += i.toString()
-        FizzBuzz.printNumbersZeroToHundred();
-        assertEquals numbersZeroToHundred, outContent.toString()
+    void noFizzShouldReturnNumber() {
+        FizzBuzz.printNumbersZeroToHundred()
+        assertEquals Integer.parseInt(outContent.toString().charAt(1).toString()), 2
+    }
+
+    @Test
+    void shouldPrintFizzInsteadMultiplesOfThrees() {
+        FizzBuzz.printNumbersZeroToHundred()
+        assertTrue outContent.toString().matches("^12Fizz4.*Fizz78Fizz.*11Fizz.*\$")
+    }
+
+    @Test
+    void shouldPrintBuzzInsteadOfMultiplesOfFives() {
+        FizzBuzz.printNumbersZeroToHundred()
+        assertTrue outContent.toString().startsWith("12Fizz4BuzzFizz78FizzBuzz11Fizz")
     }
 }
