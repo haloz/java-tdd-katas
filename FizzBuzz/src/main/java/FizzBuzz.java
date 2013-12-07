@@ -8,23 +8,43 @@ package main.java;
  * To change this template use File | Settings | File Templates.
  */
 public class FizzBuzz {
-    static public void printNumbersZeroToHundred() {
-        for(Integer i=1; i<=100; i++) {
-            if(((i+1) % 3 == 1) && ((i+1) % 5 == 1)) {
-                System.out.print("FizzBuzz");
+
+    static private boolean isMultipleOfN(int number, int multiple) {
+        return (number + 1) % multiple == 1;
+    }
+
+    static private boolean isMultipleOfThree(int number) {
+        return isMultipleOfN(number, 3);
+    }
+
+
+    static private boolean isMultipleOfFive(int number) {
+        return isMultipleOfN(number, 5);
+    }
+
+    static private void output(String part) {
+        System.out.print(part);
+    }
+
+    static private void handleNumber(Integer i) {
+        if(isMultipleOfThree(i) && isMultipleOfFive(i)) {
+            output("FizzBuzz");
+        } else {
+            if(isMultipleOfThree(i)) {
+                output("Fizz");
             } else {
-                if((i+1) % 3 == 1) {
-                    System.out.print("Fizz");
+                if(isMultipleOfFive(i)) {
+                    output("Buzz");
                 } else {
-                    if((i+1) % 5 == 1) {
-                        System.out.print("Buzz");
-                    } else {
-                        System.out.print(i.toString());
-                    }
+                    output(i.toString());
                 }
             }
         }
+    }
 
-
+    static public void printNumbersZeroToHundred() {
+        for(Integer i=1; i<=100; i++) {
+            handleNumber(i);
+        }
     }
 }
