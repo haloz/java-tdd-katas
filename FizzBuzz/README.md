@@ -1,4 +1,4 @@
-main.java.FizzBuzz
+FizzBuzz
 ===============
 
 Imagine the scene. You are eleven years old, and in the five minutes before the end of the lesson, your Maths teacher
@@ -15,7 +15,7 @@ you know what to say. Your class has about 33 pupils and he might go round three
 breaktime. Next maths lesson is on Thursday. Get coding!
 
 Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number
-and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "main.java.FizzBuzz?".
+and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
 
 Sample output:
 
@@ -33,7 +33,7 @@ Buzz
 Fizz
 13
 14
-main.java.FizzBuzz
+FizzBuzz
 16
 17
 Fizz

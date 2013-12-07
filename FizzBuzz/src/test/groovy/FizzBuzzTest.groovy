@@ -51,4 +51,11 @@ class FizzBuzzTest {
         FizzBuzz.printNumbersZeroToHundred()
         assertTrue outContent.toString().startsWith("12Fizz4BuzzFizz78FizzBuzz11Fizz")
     }
+
+    @Test
+    void shouldPrintFizzBuzzWhenMultiplesOfThreeAndFive() {
+        FizzBuzz.printNumbersZeroToHundred()
+        String test = outContent.toString()
+        assertTrue outContent.toString().startsWith("12Fizz4BuzzFizz78FizzBuzz11Fizz1314FizzBuzz16")
+    }
 }
