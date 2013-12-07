@@ -1,0 +1,24 @@
+apply plugin: 'groovy'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //testCompile 'groovy:groovy:[2,)'
+    testCompile 'org.codehaus.groovy:groovy-all:2.2.1'
+    testCompile 'junit:junit:[4,)'
+}
+
+test {
+    jvmArgs '-Xms64m', '-Xmx512m', '-XX:MaxPermSize=128m'
+    //testLogging.showStandardStreams = true //not sure about this one, was in official user guide
+
+    outputs.upToDateWhen { false } //makes it run every time even when Gradle thinks it is "Up-To-Date"
+
+    testLogging {
+        // Show that tests are run in the command-line output
+        events 'started', 'passed'
+        showStandardStreams true
+   }
+}

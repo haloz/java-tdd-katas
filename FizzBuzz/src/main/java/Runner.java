@@ -1,3 +1,5 @@
+package main.java;
+
 /**
  * Created with IntelliJ IDEA.
  * User: intellibook
