@@ -10,13 +10,12 @@ package main.java;
 public class FizzBuzz {
 
     static private boolean isMultipleOfN(int number, int multiple) {
-        return (number + 1) % multiple == 1;
+        return (number) % multiple == 0;
     }
 
     static private boolean isMultipleOfThree(int number) {
         return isMultipleOfN(number, 3);
     }
-
 
     static private boolean isMultipleOfFive(int number) {
         return isMultipleOfN(number, 5);
@@ -29,16 +28,12 @@ public class FizzBuzz {
     static private void handleNumber(Integer i) {
         if(isMultipleOfThree(i) && isMultipleOfFive(i)) {
             output("FizzBuzz");
+        } else if(isMultipleOfThree(i)) {
+            output("Fizz");
+        } else if(isMultipleOfFive(i)) {
+            output("Buzz");
         } else {
-            if(isMultipleOfThree(i)) {
-                output("Fizz");
-            } else {
-                if(isMultipleOfFive(i)) {
-                    output("Buzz");
-                } else {
-                    output(i.toString());
-                }
-            }
+            output(i.toString());
         }
     }
 
