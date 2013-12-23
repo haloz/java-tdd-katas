@@ -1,6 +1,4 @@
-package test.groovy
-
-import main.java.FizzBuzz
+import FizzBuzz
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
