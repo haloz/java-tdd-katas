@@ -8,3 +8,6 @@ FizzBuzz/build/*
 FizzBuzz/.gradle/*
 WestphalMovieRent/build/*
 WestphalMovieRent/.gradle/*
+RESTfulBasicSample/out/*
+RESTfulBasicSample/HelloJax/build/*
+RESTfulBasicSample/HelloJax/.gradle/*
