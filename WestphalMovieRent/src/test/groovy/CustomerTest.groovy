@@ -12,6 +12,7 @@ class CustomerTest extends groovy.util.GroovyTestCase {
     @Before
     void setUp() {
         customer = new Customer()
+        super.setUp()
     }
 
     @After
@@ -30,5 +31,13 @@ class CustomerTest extends groovy.util.GroovyTestCase {
         customer.rentMovie 1
         customer.rentMovie 2
         assertEquals 4, customer.getTotalCharge()
+    }
+
+    @Test
+    public void testRentingThreeMoviesAndRentingThreeDays() {
+        customer.rentMovie 1
+        customer.rentMovie 2
+        customer.rentMovie 3
+        assertEquals 7.75, customer.getTotalCharge(), 0.001
     }
 }
