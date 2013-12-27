@@ -1,6 +1,7 @@
 apply plugin: 'groovy'
 
-sourceCompatibility = 1.5
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
 version = '1.0'
 
 repositories {
@@ -13,6 +14,7 @@ dependencies {
 }
 
 test {
+
     testLogging {
         stackTraceFilters "truncate", "groovy"
         info {
