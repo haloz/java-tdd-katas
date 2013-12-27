@@ -40,4 +40,13 @@ class CustomerTest extends groovy.util.GroovyTestCase {
         customer.rentMovie 3
         assertEquals 7.75, customer.getTotalCharge(), 0.001
     }
+
+    @Test
+    public void testRentingFourMovies() {
+        customer.rentMovie 1
+        customer.rentMovie 2
+        customer.rentMovie 3
+        customer.rentMovie 4
+        assertEquals( (2 + 2 + 2+1.75 + 2+2*1.75), customer.getTotalCharge(), 0.001)
+    }
 }
