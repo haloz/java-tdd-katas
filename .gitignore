@@ -6,3 +6,5 @@
 *.ear
 FizzBuzz/build/*
 FizzBuzz/.gradle/*
+WestphalMovieRent/build/*
+WestphalMovieRent/.gradle/*
